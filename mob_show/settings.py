@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'mob_show'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -76,8 +77,8 @@ WSGI_APPLICATION = 'mob_show.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE' : 'django_mongodb_engine',
+        'NAME' : 'phone_world',
     }
 }
 
